@@ -2,7 +2,7 @@
 
 Helping people find suitable training—and helping staff follow up with the right context.
 
-SmartPath is a working interview prototype for a fictional training company. It combines AI course guidance, an optional skills challenge and a staff workspace in one application. The idea is to make choosing a course easier and give staff a clearer starting point for a useful follow-up conversation.
+SmartPath is a prototype for a fictional training company. It combines AI course guidance, an optional skills challenge and a staff workspace in one application. The idea is to make choosing a course easier and give staff a clearer starting point for a useful follow-up conversation.
 
 **Status:** the local prototype has been exercised. This repository adds a hosting configuration, but the public deployment and live cloud-AI integration have not yet been verified. There is no public URL to use yet.
 
