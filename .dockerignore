@@ -1,0 +1,14 @@
+**/.env*
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+**/data
+**/.venv
+**/.hf-cache
+**/logs
+**/evidence
+**/*.sqlite*
+**/*.joblib
+.git
+work
+docs

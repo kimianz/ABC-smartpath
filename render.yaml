@@ -1,0 +1,34 @@
+services:
+  - type: web
+    name: abc-smartpath
+    runtime: docker
+    dockerfilePath: ./Dockerfile.hosted
+    plan: standard
+    region: frankfurt
+    numInstances: 1
+    healthCheckPath: /api/ready
+    disk:
+      name: smartpath-data
+      mountPath: /var/data
+      sizeGB: 2
+    envVars:
+      - key: APP_ENV
+        value: public_demo
+      - key: AI_PROVIDER
+        value: ollama_cloud
+      - key: OLLAMA_URL
+        value: https://ollama.com
+      - key: OLLAMA_MODEL
+        sync: false
+      - key: OLLAMA_API_KEY
+        sync: false
+      - key: STAFF_TOKEN
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /var/data/smartpath.sqlite3
+      - key: HF_HOME
+        value: /var/data/models
+      - key: AI_TIMEOUT_SECONDS
+        value: '60'
+      - key: LANGCHAIN_TRACING_V2
+        value: 'false'

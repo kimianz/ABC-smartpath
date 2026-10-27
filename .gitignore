@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.hosted.example
+!.env.example
+**/node_modules
+**/__pycache__/
+**/.pytest_cache/
+**/data/
+**/.venv/
+**/.hf-cache/
+**/dist/
+logs/
+evidence/
+*.sqlite*
+*.joblib
+.DS_Store

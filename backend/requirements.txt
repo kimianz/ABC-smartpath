@@ -1,0 +1,17 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.32,<1
+pydantic[email]>=2.9,<3
+httpx>=0.27,<1
+langgraph>=0.2.60,<2
+sentence-transformers>=3.3,<6
+rank-bm25>=0.2.2,<0.3
+scikit-learn>=1.5,<2
+numpy>=1.26,<3
+joblib>=1.4,<2
+pytest>=8.3,<10
+# Verified CPU inference stack; use requirements.lock.txt for exact test environment.
+torch==2.6.0
+transformers==4.51.3
+sentence-transformers==4.1.0
+huggingface-hub==0.30.2
+tokenizers==0.21.1

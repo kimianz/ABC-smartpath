@@ -1,0 +1,160 @@
+{
+  "version": "2026-10-26.1",
+  "review_status": "Demonstration questions and automated feedback. Subject-expert review pending. Not a validated level assessment.",
+  "estimated_minutes": 6,
+  "tracks": [
+    {
+      "id": "python",
+      "title": "Python foundations",
+      "goal": "Python programming",
+      "category": "Programming",
+      "description": "Read small pieces of code and explore variables, loops and functions.",
+      "questions": [
+        {
+          "id": "python-0",
+          "statement": "After price = 10 and quantity = 3, price * quantity evaluates to 30.",
+          "correct": true,
+          "feedback": "Python uses * for multiplication. Multiplying the two stored numbers gives 30.",
+          "skill": "Variables and arithmetic"
+        },
+        {
+          "id": "python-1",
+          "statement": "In Python, \"5\" + \"2\" evaluates to the number 7.",
+          "correct": false,
+          "feedback": "Quotation marks make these strings. The + operator joins them into \"52\". Convert them to numbers to add them.",
+          "skill": "Types and strings"
+        },
+        {
+          "id": "python-2",
+          "statement": "For values = [4, 8, 12], values[0] returns 4.",
+          "correct": true,
+          "feedback": "Python list indexing starts at zero, so index 0 selects the first item.",
+          "skill": "Lists and indexing"
+        },
+        {
+          "id": "python-3",
+          "statement": "The loop for n in range(3): visits the values 1, 2 and 3.",
+          "correct": false,
+          "feedback": "range(3) produces 0, 1 and 2. The stop value is excluded.",
+          "skill": "Loops"
+        },
+        {
+          "id": "python-4",
+          "statement": "A Python function can return a result to the code that called it.",
+          "correct": true,
+          "feedback": "return passes a value back to the caller. Printing a value only displays it; these are different actions.",
+          "skill": "Functions"
+        },
+        {
+          "id": "python-5",
+          "statement": "After first = [1, 2]; second = first; second.append(3), first still contains only [1, 2].",
+          "correct": false,
+          "feedback": "Both names refer to the same list here, so appending through second also changes what first refers to. A separate list copy avoids this shared change.",
+          "skill": "References and mutation"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "AI at work",
+      "goal": "AI workplace productivity",
+      "category": "AI",
+      "description": "Try everyday decisions about prompts, checking answers and responsible use.",
+      "questions": [
+        {
+          "id": "ai-0",
+          "statement": "An AI-generated answer should be checked before using it for an important business decision.",
+          "correct": true,
+          "feedback": "A confident answer can still be wrong. Check important claims against reliable sources and involve the appropriate people.",
+          "skill": "Checking outputs"
+        },
+        {
+          "id": "ai-1",
+          "statement": "A detailed prompt guarantees that an AI answer will be factually correct.",
+          "correct": false,
+          "feedback": "Context and clear instructions can improve an answer, but cannot guarantee its accuracy. Verification still matters.",
+          "skill": "Prompting"
+        },
+        {
+          "id": "ai-2",
+          "statement": "You should check your organisation\u2019s approved tools and data rules before entering confidential customer information into an AI service.",
+          "correct": true,
+          "feedback": "Use an approved tool and the organisation\u2019s agreed data-handling process. Do not assume every service has the same settings or terms.",
+          "skill": "Information handling"
+        },
+        {
+          "id": "ai-3",
+          "statement": "A useful prompt can specify the audience, goal and desired output format.",
+          "correct": true,
+          "feedback": "These details give the model useful context. Add relevant approved information, then review the result against the task.",
+          "skill": "Clear instructions"
+        },
+        {
+          "id": "ai-4",
+          "statement": "Retrieval-augmented generation means the model automatically retrains its weights whenever a new document is added.",
+          "correct": false,
+          "feedback": "RAG retrieves information and supplies it as context for generation. It does not, by itself, retrain model weights.",
+          "skill": "RAG basics"
+        },
+        {
+          "id": "ai-5",
+          "statement": "If an AI-generated email sounds convincing, it can safely promise a customer a discount without checking company policy.",
+          "correct": false,
+          "feedback": "Commercial promises need approved facts and the required staff authority. Persuasive wording is not permission to offer a discount.",
+          "skill": "Human oversight"
+        }
+      ]
+    },
+    {
+      "id": "excel",
+      "title": "Excel and data basics",
+      "goal": "Excel spreadsheets",
+      "category": "Data",
+      "description": "Check formulas, references and everyday data-handling choices.",
+      "questions": [
+        {
+          "id": "excel-0",
+          "statement": "A standard Excel formula begins with an equals sign (=).",
+          "correct": true,
+          "feedback": "The equals sign tells Excel to calculate an expression, such as =A1+B1.",
+          "skill": "Formulas"
+        },
+        {
+          "id": "excel-1",
+          "statement": "=SUM(A1:A3) adds the values in A1, A2 and A3.",
+          "correct": true,
+          "feedback": "The colon describes a range, and SUM adds the numeric values in it.",
+          "skill": "Ranges"
+        },
+        {
+          "id": "excel-2",
+          "statement": "Sorting just one column of a customer table can separate names from their matching contact details.",
+          "correct": true,
+          "feedback": "Keep related rows together when sorting. Select the whole related table or use the table\u2019s sort controls.",
+          "skill": "Data integrity"
+        },
+        {
+          "id": "excel-3",
+          "statement": "If =A1 is copied one column to the right, the relative reference remains A1.",
+          "correct": false,
+          "feedback": "A relative reference moves with the copied formula, so it becomes B1 in this example.",
+          "skill": "Relative references"
+        },
+        {
+          "id": "excel-4",
+          "statement": "The reference $A$1 fixes both the column and row when a formula is copied.",
+          "correct": true,
+          "feedback": "The dollar signs make the column and row absolute references. This helps when many calculations use one fixed input.",
+          "skill": "Absolute references"
+        },
+        {
+          "id": "excel-5",
+          "statement": "An average alone is always enough to understand a dataset, even if a few values are much larger than the rest.",
+          "correct": false,
+          "feedback": "Large outliers can move the average. Look at the distribution, median, missing values and business context as appropriate.",
+          "skill": "Interpreting data"
+        }
+      ]
+    }
+  ]
+}

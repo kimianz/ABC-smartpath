@@ -1,0 +1,41 @@
+{
+  "label": "Illustrative scripted scenario \u2014 not live AI",
+  "contact": {
+    "name": "Alex Morgan",
+    "email": "alex@example.test",
+    "company": "Example organisation"
+  },
+  "requirements": {
+    "goal": "AI confidence at work",
+    "team_size": 15,
+    "timeline_weeks": 6,
+    "experience": "beginner",
+    "format": "online"
+  },
+  "courses": [
+    {
+      "id": "AI101",
+      "title": "AI for Business Teams",
+      "reason": "A practical starting point for a team new to workplace AI.",
+      "duration": "1 day",
+      "price_gbp": 295,
+      "price": "Illustrative \u00a3295 per learner"
+    },
+    {
+      "id": "AI102",
+      "title": "Generative AI at Work",
+      "reason": "Practise everyday productivity tasks and safe working habits.",
+      "duration": "2 days",
+      "price_gbp": 495,
+      "price": "Illustrative \u00a3495 per learner"
+    },
+    {
+      "id": "AI103",
+      "title": "Responsible AI Adoption Workshop",
+      "reason": "Build shared judgement around privacy, verification and responsible use.",
+      "duration": "1 day",
+      "price_gbp": 350,
+      "price": "Illustrative \u00a3350 per learner"
+    }
+  ]
+}

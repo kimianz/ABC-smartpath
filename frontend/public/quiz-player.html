@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SmartPath H5P question</title><link rel="stylesheet" href="/h5p-player/styles/h5p.css"><style>body{margin:0;background:#fff;font-family:Arial,sans-serif;color:#17263e}#error{padding:18px}iframe{width:100%}</style></head><body><div id="question"></div><p id="error" hidden>The question could not load. Return to the challenge and try again.</p><script src="/h5p-player/main.bundle.js"></script><script>
+const params=new URLSearchParams(location.search),track=params.get('track'),index=params.get('index'),run=params.get('run');
+const valid=['python','ai','excel'].includes(track)&&/^[0-5]$/.test(index||'');
+const send=(type,extra={})=>parent.postMessage({app:'smartpath-skills',type,track,index:Number(index),run,...extra},location.origin);
+if(!valid){document.getElementById('error').hidden=false;send('error')}else{
+ new H5PStandalone.H5P(document.getElementById('question'),{id:track+'-'+index,h5pJsonPath:'/h5p/questions/'+track+'/'+index,librariesPath:'/h5p/libraries',frameJs:'/h5p-player/frame.bundle.js',frameCss:'/h5p-player/styles/h5p.css',frame:false,fullScreen:false,postUserStatistics:false,saveFreq:false}).then(()=>{
+  send('ready');H5P.externalDispatcher.on('xAPI',event=>{const statement=event.data?.statement;if(statement?.verb?.id==='http://adlnet.gov/expapi/verbs/answered'){const answer=statement.result?.response;if(answer==='true'||answer==='false')send('answered',{answer:answer==='true'})}});
+ }).catch(()=>{document.getElementById('error').hidden=false;send('error')});
+}
+</script></body></html>

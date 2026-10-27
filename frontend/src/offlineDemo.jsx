@@ -1,0 +1,3 @@
+import React from 'react';
+import offlineHtml from './offlineDemo.html?raw';
+export function OfflineDemo(){return <main className="replay page"><div className="section-head"><div><p className="eyebrow">SELF-CONTAINED · SCRIPTED · NO LIVE SERVICES</p><h1 className="page-title">Offline demo</h1></div><a className="button secondary" href="/offline-demo.html" download="ABC_SmartPath_Offline_Demo.html">Save offline demo ↓</a></div><p>Walk through the corporate journey. You can save the HTML file and open it without internet, the backend or an LLM.</p><iframe title="Interactive offline corporate training demo" srcDoc={offlineHtml} style={{width:'100%',height:'1100px',border:'1px solid #e4deeb',borderRadius:12}} sandbox="allow-scripts"/></main>}
